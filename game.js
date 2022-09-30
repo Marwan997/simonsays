@@ -1,6 +1,5 @@
 //Colors
 var button_colors = ["red", "blue", "green", "yellow"];
-
 //Simon's pattern
 var game_pattern = [];
 //Player's pattern
@@ -31,7 +30,7 @@ $(".btn").click(function() {
   check_ans(clicked_pattern.length-1);
 });
 
-//function to check answer again Simon's sequence
+//function to check answer against Simon's sequence
 function check_ans(current_stage) {
 
     if (game_pattern[current_stage] === clicked_pattern[current_stage]) {
